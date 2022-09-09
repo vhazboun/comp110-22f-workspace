@@ -7,7 +7,7 @@ secret: str = "python"
 word_le: str = input(f"What is your { str(len(secret)) } letter guess? ")
 
 while len(word_le) != len(secret):
-    word_le: str = input(f"That was not { str(len(secret)) } letters! Try again: ")
+    word_le = input(f"That was not { str(len(secret)) } letters! Try again: ")
 
 WHITE_BOX: str = "\U00002B1C"
 GREEN_BOX: str = "\U0001F7E9"
@@ -41,4 +41,3 @@ if word_le == secret:
     print("Woo! You got it!")
 else:
     print("Not quite. Play again soon!")
-
